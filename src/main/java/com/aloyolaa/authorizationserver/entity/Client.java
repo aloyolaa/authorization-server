@@ -14,12 +14,7 @@ import java.time.Duration;
 @Setter
 @Entity
 @Table(name = "client")
-public class Client {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private Long id;
-
+public class Client extends BaseEntity {
     @Column(name = "client_id", nullable = false, length = 45)
     private String clientId;
 
